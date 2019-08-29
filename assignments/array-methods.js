@@ -93,4 +93,45 @@ console.log(LastNamesAllLower);
 
 // Problem 2
 
+// we only want runners with names smaller than 5 characters
+
+
+const smallNames = runners.filter(small => small.first_name.length < 5)
+
+console.log(smallNames);
+
+
 // Problem 3
+
+// add "are you ready ?" before every last name
+
+const readyornot = []
+
+runners.forEach(people => readyornot.push("are you ready ? " +people.first_name))
+
+
+
+
+console.log(readyornot);
+
+
+/*
+// console log all the details of the last person
+
+
+let  = runners[i];
+
+let lastRunner  = runners.filter( peeps => {
+
+ peeps[i] === peeps[peeps.length-1] 
+});
+ 
+console.log(lastRunner);
+const result = runners.filter((people,[i]) => people[i] === people[people.length- 1]);
+
+console.log(result);
+
+*/
+
+
+
