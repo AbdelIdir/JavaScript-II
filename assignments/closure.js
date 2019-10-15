@@ -4,9 +4,28 @@
 // that manipulates variables defined in the outer scope.
 // The outer scope can be a parent function, or the top level of the script.
 
+const accessible = () => {
+  const a = "hey";
+  console.log(a);
+
+  const bitLessAccessible = () => {
+    const b = a + " You";
+    console.log(b);
+    const notAccessible = () => {
+      const c = b + " Out there Beyond the wall";
+
+      console.log(c);
+    };
+
+    notAccessible();
+  };
+
+  bitLessAccessible();
+};
+
+accessible();
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
-
 
 // ==== Challenge 2: Implement a "counter maker" function ====
 const counterMaker = () => {
