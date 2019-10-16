@@ -3,10 +3,18 @@
 // Keep it simple! Remember a closure is just a function
 // that manipulates variables defined in the outer scope.
 // The outer scope can be a parent function, or the top level of the script.
+/*
+function parent (callback) {
+  return callback ;
+  function child (a,b) {
+    return a+b;
+  }
+  
 
 const accessible = () => {
   const a = "hey";
   console.log(a);
+
 
   const bitLessAccessible = () => {
     const b = a + " You";
@@ -25,8 +33,10 @@ const accessible = () => {
 
 accessible();
 
+
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
+/*
 // ==== Challenge 2: Implement a "counter maker" function ====
 const counterMaker = () => {
   // IMPLEMENTATION OF counterMaker:
@@ -50,3 +60,4 @@ const counterFactory = () => {
   // `increment` should increment a counter variable in closure scope and return it.
   // `decrement` should decrement the counter variable and return it.
 };
+*/

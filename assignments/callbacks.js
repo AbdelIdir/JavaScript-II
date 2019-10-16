@@ -43,6 +43,7 @@ function Lengthget(arg) {
 }
 
 function getLength(arr, cb) {
+
   return cb(arr);
 }
 
@@ -50,12 +51,16 @@ console.log(getLength(items, Lengthget));
 
 function lastItem(arg) {
   return arg[arg.length - 1];
+
 }
 
 function last(arr, cb) {
+
   // last passes the last item of the array into the callback.
 
+
   return cb(arr);
+
 }
 
 console.log(last(items, lastItem));
@@ -72,7 +77,9 @@ console.log(sumNums(2, 7, makeSums));
 function multiplyNums(x, y, cb) {
   // multiplyNums multiplies two numbers and passes the result to the callback.
 
+
   return cb(x, y);
+
 }
 
 const multiplier = (numa, numb) => numa * numb;
@@ -83,7 +90,9 @@ function contains(item, list, cb) {
   // contains checks if an item is present inside of the given array/list.
   // Pass true to the callback if it is, otherwise pass false.
 
+
   return cb(item, list);
+
 }
 
 const checker = (item, list) => {
